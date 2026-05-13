@@ -1,0 +1,373 @@
+{
+  "name": "Arrow Maze",
+  "domain": "arrowmaze.org",
+  "slug": "arrowmaze",
+  "genre": "Puzzle",
+  "iframeUrl": "/game/index.html",
+  "embedUrl": "https://playgama.com/export/game/escaping-arrows",
+  "embedSource": "Playgama - Escaping Arrows",
+  "seo": {
+    "title": "Arrow Maze Online - Free Logic Puzzle Game",
+    "description": "Play Arrow Maze online free. Read the arrows, choose a safe order, and clear each puzzle in a browser game with no download.",
+    "keywords": [
+      "Arrow Maze",
+      "Arrow Maze online",
+      "Arrow Maze free",
+      "free online game",
+      "browser game",
+      "puzzle game"
+    ]
+  },
+  "homepage": {
+    "heroHeadline": "Play Arrow Maze online",
+    "heroSubtitle": "A clean arrow puzzle about order, timing, and reading the board before you move.",
+    "lede": "Arrow Maze is a free browser puzzle where every arrow matters. Study the grid, pick the safest pieces first, and clear the board without letting one rushed move spoil the route.",
+    "stats": [
+      {
+        "value": "Free",
+        "label": "Browser Play"
+      },
+      {
+        "value": "0",
+        "label": "Downloads"
+      },
+      {
+        "value": "1",
+        "label": "Playable Route"
+      },
+      {
+        "value": "Quick",
+        "label": "Sessions"
+      }
+    ],
+    "about": {
+      "kicker": "Logic puzzle",
+      "headline": "A simple idea that becomes a sharp route-planning challenge.",
+      "paragraph1": "Arrow Maze gives you a board filled with directional pieces. The goal is to remove or move them in a sensible order, using each arrow direction as a clue instead of guessing blindly.",
+      "paragraph2": "The best runs are calm and deliberate. Start with arrows that have open paths, avoid crowded center clusters too early, and learn from each restart instead of forcing a bad route."
+    },
+    "howToPlay": {
+      "headline": "How to play Arrow Maze",
+      "subheading": "Start with the basics, then improve one small decision at a time."
+    },
+    "steps": [
+      {
+        "icon": "folder",
+        "title": "Open the Game",
+        "desc": "Go to the Play page and let the browser game load through the local wrapper."
+      },
+      {
+        "icon": "eye",
+        "title": "Read the First Screen",
+        "desc": "Take a few seconds to understand the objective, layout, and safe choices before acting."
+      },
+      {
+        "icon": "hand",
+        "title": "Use Simple Controls",
+        "desc": "Play with mouse, trackpad, or touch depending on your device and the game prompt."
+      },
+      {
+        "icon": "target",
+        "title": "Make Cleaner Decisions",
+        "desc": "Start with arrows that point toward open space, then work inward once the board is less crowded."
+      },
+      {
+        "icon": "refresh",
+        "title": "Replay and Improve",
+        "desc": "Short sessions make it easy to retry, notice patterns, and play better next time."
+      }
+    ],
+    "categories": [
+      {
+        "name": "Safe Starts",
+        "icon": "star",
+        "color": "#0f766e",
+        "bg": "#ccfbf1",
+        "img": "/level-thumbs/category-1.webp"
+      },
+      {
+        "name": "Arrow Order",
+        "icon": "target",
+        "color": "#2563eb",
+        "bg": "#dbeafe",
+        "img": "/level-thumbs/category-2.webp"
+      },
+      {
+        "name": "Logic Routes",
+        "icon": "zap",
+        "color": "#d97706",
+        "bg": "#fef3c7",
+        "img": "/level-thumbs/category-3.webp"
+      },
+      {
+        "name": "Hard Grids",
+        "icon": "trophy",
+        "color": "#7c3aed",
+        "bg": "#ede9fe",
+        "img": "/level-thumbs/category-4.webp"
+      },
+      {
+        "name": "Focused Runs",
+        "icon": "crown",
+        "color": "#dc2626",
+        "bg": "#fee2e2",
+        "img": "/level-thumbs/category-5.webp"
+      }
+    ],
+    "features": [
+      {
+        "icon": "bolt",
+        "title": "Readable puzzle rules",
+        "desc": "The rules are easy to understand, so you can focus on the next good decision instead of menus."
+      },
+      {
+        "icon": "target",
+        "title": "Order-based strategy",
+        "desc": "Success comes from spotting useful patterns and avoiding choices that create problems later."
+      },
+      {
+        "icon": "device",
+        "title": "Fast browser sessions",
+        "desc": "Rounds load in the browser and work well for short breaks or longer practice sessions."
+      },
+      {
+        "icon": "shield",
+        "title": "Works across devices",
+        "desc": "The game page is designed for common desktop, tablet, and mobile browsers."
+      },
+      {
+        "icon": "refresh",
+        "title": "Family-friendly play",
+        "desc": "The copy avoids misleading download claims, official ownership language, and exaggerated promises."
+      },
+      {
+        "icon": "gauge",
+        "title": "Useful restarts",
+        "desc": "Replay value comes from cleaner choices, better timing, and learning from each attempt."
+      }
+    ],
+    "faq": [
+      {
+        "q": "What is Arrow Maze?",
+        "a": "Arrow Maze is a free browser puzzle game that runs through the local /game/index.html route on this site."
+      },
+      {
+        "q": "Is Arrow Maze free to play?",
+        "a": "Yes. The game page is free to open in a modern browser, with no account or download required."
+      },
+      {
+        "q": "Do I need to install anything?",
+        "a": "No. Open the Play page and the game loads inside the browser iframe wrapper."
+      },
+      {
+        "q": "Does it work on mobile?",
+        "a": "The page is responsive, and the embedded game is intended for browser play on common desktop and mobile devices."
+      },
+      {
+        "q": "Is this an official app page?",
+        "a": "No. This is an independent browser play page that embeds a free web game source."
+      },
+      {
+        "q": "What is the best beginner tip?",
+        "a": "Start with arrows that point toward open space, then work inward once the board is less crowded."
+      }
+    ],
+    "cta": {
+      "headline": "Play Arrow Maze in your browser.",
+      "subtext": "No signup, no install, and no pressure to download an app."
+    }
+  },
+  "playPage": {
+    "howItWorksSubtitle": "Three simple steps to start playing",
+    "steps": [
+      {
+        "title": "Open Arrow Maze",
+        "desc": "Visit the Play page and wait for the game frame to load."
+      },
+      {
+        "title": "Learn the Controls",
+        "desc": "Use the first few moments to understand the buttons, taps, or movement pattern."
+      },
+      {
+        "title": "Play a Clean Round",
+        "desc": "Start with arrows that point toward open space, then work inward once the board is less crowded."
+      }
+    ]
+  },
+  "faqPage": {
+    "items": [
+      {
+        "q": "What is Arrow Maze?",
+        "a": "Arrow Maze is a free browser puzzle game that runs through the local /game/index.html route on this site."
+      },
+      {
+        "q": "Is Arrow Maze free to play?",
+        "a": "Yes. The game page is free to open in a modern browser, with no account or download required."
+      },
+      {
+        "q": "Do I need to install anything?",
+        "a": "No. Open the Play page and the game loads inside the browser iframe wrapper."
+      },
+      {
+        "q": "Does it work on mobile?",
+        "a": "The page is responsive, and the embedded game is intended for browser play on common desktop and mobile devices."
+      },
+      {
+        "q": "Is this an official app page?",
+        "a": "No. This is an independent browser play page that embeds a free web game source."
+      },
+      {
+        "q": "What is the best beginner tip?",
+        "a": "Start with arrows that point toward open space, then work inward once the board is less crowded."
+      },
+      {
+        "q": "Can I play offline?",
+        "a": "An internet connection is needed to load the site and the embedded game source."
+      },
+      {
+        "q": "Is progress saved?",
+        "a": "Any progress behavior depends on the embedded game and browser storage. Clearing browser data may remove local progress."
+      }
+    ]
+  },
+  "howToPlayPage": {
+    "intro": "Arrow Maze is designed for quick browser play, but better results come from reading the situation before acting. Each arrow points in a fixed direction, so the puzzle is about finding a safe order. A move that looks harmless can block a later path, which makes careful scanning more important than speed.",
+    "steps": [
+      {
+        "title": "Open the Game",
+        "desc": "Load the Play page and let the frame settle before interacting."
+      },
+      {
+        "title": "Understand the Goal",
+        "desc": "Read the first screen or board state so your early choices have context."
+      },
+      {
+        "title": "Make the First Clean Move",
+        "desc": "Start with arrows that point toward open space, then work inward once the board is less crowded."
+      }
+    ],
+    "mechanic": {
+      "title": "Core Mechanic",
+      "desc": "Each arrow points in a fixed direction, so the puzzle is about finding a safe order. A move that looks harmless can block a later path, which makes careful scanning more important than speed."
+    },
+    "difficultyProgression": "Early boards teach safe exits and obvious routes. Later puzzles add dense clusters, misleading open spaces, and longer sequences that reward planning several moves ahead.",
+    "tips": [
+      {
+        "title": "Scan before acting",
+        "desc": "A quick read prevents many avoidable mistakes."
+      },
+      {
+        "title": "Protect open space",
+        "desc": "Avoid choices that close off useful options too early."
+      },
+      {
+        "title": "Use restarts well",
+        "desc": "A restart is useful when it teaches you what to change."
+      },
+      {
+        "title": "Play short sessions",
+        "desc": "Brief focused attempts are often better than tired repeat runs."
+      },
+      {
+        "title": "Ignore risky shortcuts",
+        "desc": "A safe, steady decision usually beats a flashy move with poor odds."
+      }
+    ]
+  },
+  "blog": {
+    "headline": "Guides & Strategy",
+    "subheading": "Practical advice for playing Arrow Maze with more control.",
+    "introParagraph": "These guides focus on simple, useful habits: reading the screen, avoiding rushed choices, and making each retry more informed than the last.",
+    "posts": [
+      {
+        "slug": "getting-started",
+        "title": "Getting Started with Arrow Maze",
+        "excerpt": "Learn the basic rhythm of Arrow Maze, from loading the game to making your first cleaner decisions.",
+        "category": "Guide",
+        "readTime": "5 min read",
+        "date": "2026-01-01",
+        "icon": "map",
+        "sections": [
+          {
+            "heading": "What Is Arrow Maze?",
+            "paragraphs": [
+              "Arrow Maze is a free browser puzzle where every arrow matters. Study the grid, pick the safest pieces first, and clear the board without letting one rushed move spoil the route.",
+              "Arrow Maze gives you a board filled with directional pieces. The goal is to remove or move them in a sensible order, using each arrow direction as a clue instead of guessing blindly."
+            ]
+          },
+          {
+            "heading": "How to Open the Game",
+            "paragraphs": [
+              "Open the Play page and wait for the embedded frame to finish loading. There is no app installer, account gate, or extra software step.",
+              "Use a current browser and keep the tab active while the game starts. If the frame does not appear immediately, refresh once after your connection settles."
+            ]
+          },
+          {
+            "heading": "Your First Five Minutes",
+            "paragraphs": [
+              "Treat the first run as a learning round. Look for the main objective, test the controls, and notice which decisions create trouble.",
+              "Start with arrows that point toward open space, then work inward once the board is less crowded."
+            ]
+          }
+        ]
+      },
+      {
+        "slug": "tips-and-tricks",
+        "title": "Practical Tips for Arrow Maze",
+        "excerpt": "Simple habits that help you play with more control and fewer wasted attempts.",
+        "category": "Strategy",
+        "readTime": "6 min read",
+        "date": "2026-01-05",
+        "icon": "lightbulb",
+        "sections": [
+          {
+            "heading": "Slow Down at the Start",
+            "paragraphs": [
+              "Most mistakes happen before the player has read the board or screen properly. A short pause gives you enough context to make a better first move.",
+              "This does not mean playing slowly forever. It means starting with a clear read so later decisions can become faster and cleaner."
+            ]
+          },
+          {
+            "heading": "Learn From Restarts",
+            "paragraphs": [
+              "A failed attempt is useful when you can name what went wrong. Did you rush, miss a safe option, or move into a crowded area too early?",
+              "Use that answer on the next run. Small corrections add up quickly in short browser games."
+            ]
+          },
+          {
+            "heading": "Build a Repeatable Routine",
+            "paragraphs": [
+              "Scan first, act second, then adjust. That routine works across easy and difficult rounds because it keeps you from relying on random guesses.",
+              "Start with arrows that point toward open space, then work inward once the board is less crowded."
+            ]
+          }
+        ]
+      },
+      {
+        "slug": "safe-browser-play",
+        "title": "Safe Browser Play Notes for Arrow Maze",
+        "excerpt": "What players and parents should know about browser play, downloads, and healthy sessions.",
+        "category": "Safety",
+        "readTime": "4 min read",
+        "date": "2026-01-10",
+        "icon": "shield",
+        "sections": [
+          {
+            "heading": "No Download Needed",
+            "paragraphs": [
+              "The game is presented through a browser iframe wrapper, so there is no need to install an app from this site.",
+              "As with any web game, use a current browser and avoid third-party prompts that ask for unnecessary downloads."
+            ]
+          },
+          {
+            "heading": "Keep Sessions Balanced",
+            "paragraphs": [
+              "Short sessions are usually the best fit. They make the game fun without turning a quick break into a long distraction.",
+              "For younger players, adults can set a time limit and check that the page remains focused on the game itself."
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
