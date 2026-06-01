@@ -1,6 +1,3 @@
-import fs from 'fs';
-import path from 'path';
-
 export interface GameLevel {
   id: number;
   title: string;
@@ -22,82 +19,73 @@ export interface GameCategory {
   levels: GameLevel[];
 }
 
-// TODO: Replace these with your game's actual categories
-const categoryMetadata: Record<string, Partial<GameCategory>> = {
-  Category1: { slug: 'category-1', icon: '🎮', color: '#ef4444', description: '[CATEGORY_1_DESCRIPTION]', longDescription: '[CATEGORY_1_LONG_DESCRIPTION]' },
-  Category2: { slug: 'category-2', icon: '🌿', color: '#22c55e', description: '[CATEGORY_2_DESCRIPTION]', longDescription: '[CATEGORY_2_LONG_DESCRIPTION]' },
-  Category3: { slug: 'category-3', icon: '🏙️', color: '#6c5ce7', description: '[CATEGORY_3_DESCRIPTION]', longDescription: '[CATEGORY_3_LONG_DESCRIPTION]' },
-  Category4: { slug: 'category-4', icon: '🎨', color: '#e17055', description: '[CATEGORY_4_DESCRIPTION]', longDescription: '[CATEGORY_4_LONG_DESCRIPTION]' },
-  Category5: { slug: 'category-5', icon: '⭐', color: '#fdcb6e', description: '[CATEGORY_5_DESCRIPTION]', longDescription: '[CATEGORY_5_LONG_DESCRIPTION]' },
-};
+const categorySeed: Array<Omit<GameCategory, 'levels'>> = [
+  {
+    slug: 'beginner',
+    name: 'Beginner',
+    icon: '01',
+    color: '#ef4444',
+    description: 'Quick, friendly levels for relaxed browser play.',
+    longDescription: 'Arrowmaze beginner levels are designed for fast starts, clear goals, and casual sessions.',
+  },
+  {
+    slug: 'classic',
+    name: 'Classic',
+    icon: '02',
+    color: '#22c55e',
+    description: 'Balanced levels with familiar pacing and steady challenge.',
+    longDescription: 'Arrowmaze classic levels give players a balanced route through the core game experience.',
+  },
+  {
+    slug: 'challenge',
+    name: 'Challenge',
+    icon: '03',
+    color: '#6c5ce7',
+    description: 'Harder levels for players who want more focus.',
+    longDescription: 'Arrowmaze challenge levels are built for players who enjoy tougher decisions and longer sessions.',
+  },
+  {
+    slug: 'expert',
+    name: 'Expert',
+    icon: '04',
+    color: '#e17055',
+    description: 'Advanced levels for confident players.',
+    longDescription: 'Arrowmaze expert levels collect the most demanding scenarios for experienced players.',
+  },
+];
 
-export const categories: GameCategory[] = [];
+const difficulties: GameLevel['difficulty'][] = ['Easy', 'Medium', 'Hard', 'Expert', 'Master'];
 
-try {
-  const levelsDir = path.join(process.cwd(), 'public', 'levels');
-  const folders = fs.readdirSync(levelsDir, { withFileTypes: true })
-    .filter(dirent => dirent.isDirectory())
-    .map(dirent => dirent.name);
-
-  let globalId = 1;
-  const diffLevels: Array<'Easy'|'Medium'|'Hard'|'Expert'|'Master'> = ['Easy', 'Medium', 'Hard', 'Expert', 'Master'];
-
-  for (const folder of folders) {
-    const meta = categoryMetadata[folder] || {
-      slug: folder.toLowerCase(),
-      icon: '🧩',
-      color: '#888',
-      description: `${folder} levels.`,
-      longDescription: `Enjoy our collection of ${folder} levels.`
-    };
-
-    const folderPath = path.join(levelsDir, folder);
-    const files = fs.readdirSync(folderPath)
-      .filter(file => /\.(jpg|jpeg|png|webp|gif)$/i.test(file));
-
-    const levels: GameLevel[] = [];
-    files.forEach((file, index) => {
-      const title = file.replace(/\.[^/.]+$/, '').replace(/[_-]/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
-      const difficulty = diffLevels[Math.min(index, diffLevels.length - 1)];
-
-      levels.push({
-        id: globalId++,
-        title,
-        gridSize: '3×3',
-        gridCols: 3,
-        gridRows: 3,
-        difficulty,
-        imageKeyword: file,
-        imageThumbnail: `${path.parse(file).name}.webp`
-      });
-    });
-
-    categories.push({
-      slug: meta.slug!,
-      name: folder,
-      icon: meta.icon!,
-      color: meta.color!,
-      description: meta.description!,
-      longDescription: meta.longDescription!,
-      levels
-    });
-  }
-} catch (error) {
-  console.error('Error loading dynamic levels:', error);
+function createLevels(categoryName: string, startId: number): GameLevel[] {
+  return difficulties.map((difficulty, index) => ({
+    id: startId + index,
+    title: `${categoryName} ${difficulty}`,
+    gridSize: '3x3',
+    gridCols: 3,
+    gridRows: 3,
+    difficulty,
+    imageKeyword: `${categoryName.toLowerCase()}-${difficulty.toLowerCase()}`,
+    imageThumbnail: '',
+  }));
 }
 
+export const categories: GameCategory[] = categorySeed.map((category, index) => ({
+  ...category,
+  levels: createLevels(category.name, index * difficulties.length + 1),
+}));
+
 export function getCategoryBySlug(slug: string): GameCategory | undefined {
-  return categories.find(c => c.slug === slug);
+  return categories.find((category) => category.slug === slug);
 }
 
 export function getLevelById(id: number): { category: GameCategory; level: GameLevel } | undefined {
-  for (const cat of categories) {
-    const level = cat.levels.find(l => l.id === id);
-    if (level) return { category: cat, level };
+  for (const category of categories) {
+    const level = category.levels.find((item) => item.id === id);
+    if (level) return { category, level };
   }
   return undefined;
 }
 
 export function getAllLevels(): { category: GameCategory; level: GameLevel }[] {
-  return categories.flatMap(cat => cat.levels.map(level => ({ category: cat, level })));
+  return categories.flatMap((category) => category.levels.map((level) => ({ category, level })));
 }

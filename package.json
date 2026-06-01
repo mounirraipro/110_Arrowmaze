@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "start": "echo \"Static export: serve the out directory with your web server\"",
     "lint": "eslint",
     "generate:level-thumbs": "python scripts/generate_level_thumbnails.py"
   },
@@ -25,5 +25,9 @@
     "tailwindcss": "^4",
     "typescript": "^5"
   },
-  "description": "Arrow Maze \u2014 free browser game"
+  "description": "Arrow Maze — free browser game",
+  "engines": {
+    "node": ">=20.9.0",
+    "npm": ">=10"
+  }
 }

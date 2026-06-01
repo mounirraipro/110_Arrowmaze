@@ -1,6 +1,8 @@
 import type { MetadataRoute } from 'next';
 import { categories } from './lib/gameData';
 
+export const dynamic = "force-static";
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://arrowmaze.org';
   const now = new Date();
